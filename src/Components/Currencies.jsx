@@ -1,5 +1,7 @@
 import React from 'react'
 import { PiCurrencyBtcFill } from "react-icons/pi";
+import Marquee from "react-fast-marquee";
+
 import { PiCurrencyCircleDollarBold } from "react-icons/pi";
 import { PiCurrencyCnyBold } from "react-icons/pi";
 import { PiCurrencyDollarBold } from "react-icons/pi";
@@ -18,7 +20,9 @@ import Curr from './Curr';
 
 function Currencies() {
   return (
-    <div className=' max-w-[1200px] mx-auto flex gap-4 overflow-x-scroll hide-scrollbar px-3 '>
+    <div className=' max-w-[1200px] mx-auto '>
+        <Marquee autoFill={true} >
+    <div className='  flex gap-4 overflow-x-scroll hide-scrollbar px-3 '>
         <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} />
         <Curr crr1={<PiCurrencyBtcFill />} crr2={<RiCurrencyFill  />} down="mt-10" />
         <Curr crr1={<PiCurrencyCnyBold />} crr2={<MdCurrencyYen />} />
@@ -33,8 +37,8 @@ function Currencies() {
         <Curr crr1={<GiCreditsCurrency />} crr2={<PiCurrencyCnyBold  />} down="mt-10" />
         <Curr crr1={<MdCurrencyYen />} crr2={<PiCurrencyCnyBold />} />
         <Curr crr1={<RiCurrencyFill />} crr2={<PiCurrencyBtcFill  />} down="mt-10" />
-        <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} />
-        <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} />
+        <Curr crr1={<PiCurrencyCircleDollarBold />} crr2={<PiCurrencyBtcFill />} />
+        {/* <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} /> */}
         <Curr crr1={<PiCurrencyBtcFill />} crr2={<RiCurrencyFill  />} down="mt-10" />
         <Curr crr1={<PiCurrencyCnyBold />} crr2={<MdCurrencyYen />} />
         <Curr crr1={<PiCurrencyDollarBold />} crr2={<GiCreditsCurrency  />} down="mt-10" />
@@ -49,7 +53,7 @@ function Currencies() {
         <Curr crr1={<MdCurrencyYen />} crr2={<PiCurrencyCnyBold />} />
         <Curr crr1={<RiCurrencyFill />} crr2={<PiCurrencyBtcFill  />} down="mt-10" />
         <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} />
-        <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} />
+        {/* <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} /> */}
         <Curr crr1={<PiCurrencyBtcFill />} crr2={<RiCurrencyFill  />} down="mt-10" />
         <Curr crr1={<PiCurrencyCnyBold />} crr2={<MdCurrencyYen />} />
         <Curr crr1={<PiCurrencyDollarBold />} crr2={<GiCreditsCurrency  />} down="mt-10" />
@@ -66,6 +70,8 @@ function Currencies() {
         <Curr crr1={<PiCurrencyBtcFill />} crr2={<PiCurrencyBtcFill />} />
         
         
+    </div>
+    </Marquee>
     </div>
   )
 }
