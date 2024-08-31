@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.grow-line {
+    animation: grow 2s ease-in-out;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    height: 0px; /* Hides the scrollbar */
+  }
+
+@keyframes grow {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
